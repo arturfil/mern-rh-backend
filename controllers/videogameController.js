@@ -4,10 +4,6 @@ const fs = require('fs');
 
 const Videogame = require('../models/Videogame');
 
-exports.test = (req, res) => {
-  res.json({message: "This works"});
-}
-
 exports.list = (req, res) => {
   let order = req.query.order ? req.query.order : 'asc'
   let sortBy = req.query.sortBy ? req.query.sortBy : 'name'

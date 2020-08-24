@@ -22,6 +22,7 @@ mongoose.connect(process.env.DATABASE, {
 // Routes Setup
 app.use('/api/videogame', require('./routes/videogame'));
 app.use('/api/category', require('./routes/category'));
+app.use('/api/users', require('./routes/auth'));
 
 const port = process.env.PORT;
 
